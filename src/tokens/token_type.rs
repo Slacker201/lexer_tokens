@@ -4,7 +4,7 @@
 pub enum TokenType {
     Punctuation(Punctuation),
     Delimiter,
-    Identifier,
+    Identifier(String),
     Keyword,
     Symbol(Symbol),
     Unknown(String),
