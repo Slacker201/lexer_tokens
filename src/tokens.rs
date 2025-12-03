@@ -6,7 +6,7 @@ pub mod token_type;
 
 
 pub struct Token {
-    span: Span,
-    token_type: TokenType,
+    pub span: Span,
+    pub token_type: TokenType,
 }
 
