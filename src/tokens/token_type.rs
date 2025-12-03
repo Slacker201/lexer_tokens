@@ -1,5 +1,6 @@
 
 
+#[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
 pub enum TokenType {
     Punctuation(Punctuation),
     Delimiter,
@@ -8,6 +9,7 @@ pub enum TokenType {
     Unknown(String),
 }
 
+#[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
 pub enum Punctuation {
     Period,
     SemiColon,

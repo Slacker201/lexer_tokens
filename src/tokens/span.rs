@@ -1,5 +1,5 @@
 
-
+#[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
 pub struct Span {
     start: u64,
     end: u64,
