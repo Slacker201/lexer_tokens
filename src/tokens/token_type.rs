@@ -6,6 +6,7 @@ pub enum TokenType {
     Delimiter,
     Identifier,
     Keyword,
+    Symbol(Symbol),
     Unknown(String),
     String(String),
 }
@@ -14,11 +15,23 @@ pub enum TokenType {
 pub enum Punctuation {
     Period,
     SemiColon,
-    Hyphen,
-    Plus,
-    Astrix,
-    Ampersand,
     Exclamation,
+}
+
+#[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
+pub enum Symbol {
+    At,
     Equals,
     EqualityComparison,
+    Hyphen,
+    Plus,
+    ForwardSlash,
+    Astrix,
+    Ampersand,
+    Hashtag,
+    Percent,
+    Caret,
+    Question,
+    OpenAngle,
+    CloseAngle,
 }
