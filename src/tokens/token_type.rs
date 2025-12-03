@@ -7,6 +7,7 @@ pub enum TokenType {
     Identifier,
     Keyword,
     Unknown(String),
+    String(String),
 }
 
 #[derive(Debug, PartialEq, Eq, PartialOrd, Ord)]
